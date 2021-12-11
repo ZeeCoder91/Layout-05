@@ -1,0 +1,38 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header, footer, nav, article, aside {
+    padding: 1em;
+}
+header, footer {
+    background-color: yellowgreen;
+    min-height: 20vh;
+}
+
+
+.content {
+    display: flex;
+    min-height: 60vh;
+}
+
+.content > article {
+    flex: 1;
+}
+
+.content > nav,
+.content > aside {
+    background-color: beige;
+    flex: 0 0 20vw;
+}
